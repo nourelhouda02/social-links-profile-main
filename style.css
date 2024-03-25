@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*:root{
+    --Green: hsl(75, 94%, 57%)
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+
+    --font-size: 14px;
+    --font-family: "Inter", sans-serif;
+    --font-weight: 400;
+    --font-weight: 600;
+    --font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Off_Black);
+    display: grid;
+    place-content: center;
+}
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin:  150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h3{
+    color: white;
+    font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 10px;
+}
+h6{
+    color: greenyellow;
+    font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 18px;
+}
+p{
+    color: gainsboro;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+button{
+    background-color: var(--Grey);
+    cursor: pointer;
+    display: grid;
+    text-align: center;
+    width: 250px;
+    height:  40px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom:  13px;
+    margin-left: 50px;
+}
+button:hover{
+    background-color: greenyellow;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-family);
+    margin-top:  9px;
+    font-weight: bolder;
+}
+.card{
+    background-color: var(--Dark_Grey);
+    height: 500px;
+    width:  350px;
+    margin: 20px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+    
+   
+    @media only screen and (max-width: 600px) {
+      .card{
+            width: 250px;
+            height: 500;
+        }
+       button{
+            margin-left: 25px;
+            padding: 5px;
+            width: 200px;
+        }
+        a{
+            margin-top:  6px;
+        }       
+        img{
+            margin-left: 100px;
+        } 
+    } 
